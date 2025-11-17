@@ -23,7 +23,7 @@ const navItems = [
 ];
 
 export function AppSidebar() {
-  const { open } = useSidebar();
+  const { open, isMobile } = useSidebar();
   const location = useLocation();
   const currentPath = location.pathname;
 
@@ -33,11 +33,11 @@ export function AppSidebar() {
   };
 
   return (
-    <Sidebar className={open ? "w-60" : "w-16"} collapsible="icon">
+    <Sidebar collapsible={isMobile ? "offcanvas" : "icon"}>
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel className="text-lg font-bold px-4 py-6">
-            {open && "KOPI SUSU"}
+            KOPI SUSU
           </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
@@ -49,7 +49,7 @@ export function AppSidebar() {
                   >
                     <NavLink to={item.url} end={item.url === "/"}>
                       <item.icon className="h-5 w-5" />
-                      {open && <span className="font-medium">{item.title}</span>}
+                      <span className="font-medium">{item.title}</span>
                     </NavLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
