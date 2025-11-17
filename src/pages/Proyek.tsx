@@ -32,6 +32,14 @@ const projects = [
     videoUrl: "https://youtu.be/zV_ycoTFyhc",
     githubUrl: "https://github.com/otaruram/Capstone-Project-02",
   },
+  {
+    title: "SIMPLE",
+    subtitle: "Proyek Random",
+    description:
+      "Proyek eksperimental dan pembelajaran. Eksplorasi berbagai teknologi dan konsep dalam pengembangan web modern.",
+    tags: ["React", "Web Development", "Experimental"],
+    demoUrl: "https://prj-kho2vgal-frontend.vercel.app/",
+  },
 ];
 
 const Proyek = () => {
