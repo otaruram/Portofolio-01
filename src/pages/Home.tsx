@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import heroImage from "@/assets/hero-image.jpg";
+import heroImage from "@/assets/c.jpg";
 
 const Home = () => {
   return (
